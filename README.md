@@ -1,12 +1,22 @@
-## docker-test
+docker-test
+===========
 
-A simple java web application runing in Docker container.
+A simple java web application runing in Docker container
 
-$docker build -t dejan/pingpong .
+### Usage
 
-$docker run -d -p 8080:8080 dejan/pingpong
+```console
+$ docker build -t dejan/pingpong .
 
-$curl http://localhost:8080/ping
+$ docker run -d -p 8080:8080 dejan/pingpong
+```
+
+Test it out!
+```console
+$ curl http://localhost:8080/ping
+```
 
 If all goes well, you should see the response:
-$pong
+```console
+$ pong
+```
